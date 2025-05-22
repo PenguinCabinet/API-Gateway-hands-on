@@ -1,0 +1,18 @@
+# a very minimal declarative config file
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: WebService1
+  url: http://172.30.0.5:13000
+  routes:
+  - name: WebService1-routes
+    paths:
+    - /WebService1
+- name: WebService2
+  url: http://172.30.0.6:13000
+  routes:
+  - name: WebService2-routes
+    paths:
+    - /WebService2
+
